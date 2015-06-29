@@ -76,6 +76,9 @@ input::input-placeholder {
   .button:active {
     background: rgba(0, 0, 0, 0.1); }
 
+.wf-loading body {
+  visibility: hidden; }
+
 .hero {
   background: url(../hero.jpg) no-repeat center center;
   background-size: cover;

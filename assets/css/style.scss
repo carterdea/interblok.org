@@ -90,6 +90,10 @@ textarea {
   }
 }
 
+.wf-loading body {
+  visibility: hidden;
+}
+
 .hero {
   background: url(hero.jpg) no-repeat center center;
   background-size: cover;
