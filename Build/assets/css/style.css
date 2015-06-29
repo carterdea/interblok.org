@@ -121,15 +121,13 @@ nav ul {
 nav ul li {
   display: inline;
   font-size: 18px;
-  font-family: "Reader Bold";
-  font-weight: 600;
   margin-left: 35px; }
 
 nav ul li a {
   color: #fff;
   text-decoration: none; }
   nav ul li a.button {
-    padding: 10px 44px 6px; }
+    padding: 8px 44px 6px; }
 
 .mobile-nav {
   display: none; }
@@ -172,14 +170,12 @@ nav ul li a {
 .founder-profile h4 {
   font-size: 16px;
   font-family: "Reader Medium";
-  font-weight: 500;
   margin-bottom: 5px; }
 
 .founder-profile h5.medium-post {
   background: url(../social-medium.png) no-repeat center left;
   font-size: 14px;
   font-family: "Reader Medium";
-  font-weight: 500;
   padding: 3px 0 0 0;
   margin-bottom: 10px; }
 
@@ -265,7 +261,6 @@ footer {
     footer ul li {
       font-size: 16px;
       font-family: "Reader Medium";
-      font-weight: 500;
       margin-left: 25px; }
       footer ul li a {
         opacity: .6; }
