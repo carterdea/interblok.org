@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- @reload -->
   <!-- @stylesheet normalize style -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript">
+    var html = document.getElementsByTagName('html')[0];
+    html.className += '  wf-loading';
+    setTimeout(function() {
+      html.className = html.className.replace(' wf-loading', '');
+    }, 5000);
     WebFontConfig = { fontdeck: { id: '57838' } };
 
     (function() {
@@ -19,7 +23,7 @@
       s.parentNode.insertBefore(wf, s);
     })();
   </script>
-  <!-- <link rel="stylesheet" href="//f.fontdeck.com/s/css/wMErktaKFxpwhaGE/Bm0r6zK5/hammr.co/57838.css" type="text/css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!-- @javascript app -->
   <script src="assets/js/jquery.fitvids.js"></script>
   <link href="<!-- @path favicon.ico -->" rel="shortcut icon">

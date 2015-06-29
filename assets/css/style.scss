@@ -1,7 +1,7 @@
 body {
-  font-family: "Reader Medium", sans-serif;
+  font-family: "Reader Medium";
   font-size: 22px;
-  font-weight: 500;
+  font-weight: normal;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,12 +24,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-family: "Reader Bold";
+  font-style: normal;
+  font-weight: normal;
 }
 
 h1 {
   font-size: 52px;
-  font-weight: 500;
+  font-family: "Reader Medium";
   line-height: 1.1;
   margin-bottom: 16px;
 }
@@ -63,7 +65,7 @@ textarea {
   background: rgba(255,255,255,.3);
   border: 0;
   color: #fff;
-  font-family: Reader, sans-serif;
+  font-family: "Reader Medium";
   padding: 14px 0px 10px 12px;
 }
 
@@ -142,6 +144,7 @@ nav {
   nav ul li {
     display: inline;
     font-size: 18px;
+    font-family: "Reader Bold";
     font-weight: 600;
     margin-left: 35px;
   }
@@ -150,7 +153,7 @@ nav {
       color: #fff;
       text-decoration: none;
       &.button {
-        padding: 8px 44px;
+        padding: 10px 44px 6px;
       }
     }
 
@@ -203,6 +206,7 @@ nav {
 
   .founder-profile h4 {
     font-size: 16px;
+    font-family: "Reader Medium";
     font-weight: 500;
     margin-bottom: 5px;
   }
@@ -210,6 +214,7 @@ nav {
   .founder-profile h5.medium-post {
     background: url(social-medium.png) no-repeat center left;
     font-size: 14px;
+    font-family: "Reader Medium";
     font-weight: 500;
     padding: 3px 0 0 0;
     margin-bottom: 10px;
@@ -316,6 +321,7 @@ footer {
     float: right;
     li {
       font-size: 16px;
+      font-family: "Reader Medium";
       font-weight: 500;
       margin-left: 25px;
       a {
