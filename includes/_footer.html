@@ -1,4 +1,4 @@
-<footer class="group">
+<footer class="group" id="footer">
   <div class="container">
     <img src="<!-- @path footer-logo.png -->" alt="interBLOK">
     <nav>
@@ -6,6 +6,7 @@
         <li><a href="#story">The Story</a></li>
         <li><a href="#plan">The Plan</a></li>
         <li><a href="#progress">Our Progress<a></li>
+        <li><a href="#involved">Get Involved<a></li>
         <li><a href="mailto:alex@interblok.org">Contact Us</a></li>
       </ul>
     </nav>
@@ -15,6 +16,22 @@
   $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.
     $("#plan-video").fitVids();
+  });
+</script>
+<script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
   });
 </script>
 </body>

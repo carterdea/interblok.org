@@ -1,5 +1,5 @@
 body {
-  font-family: Reader, sans-serif;
+  font-family: "Reader Medium", sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 1.4;
@@ -46,7 +46,7 @@ h3 {
 
 h3 small {
   color: #bbb;
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
 }
 
@@ -58,11 +58,34 @@ p {
   margin: 0 0 16px;
 }
 
+input,
+textarea {
+  background: rgba(255,255,255,.3);
+  border: 0;
+  color: #fff;
+  font-family: Reader, sans-serif;
+  padding: 14px 0px 10px 12px;
+}
+
+  input::-webkit-input-placeholder,
+  input::-moz-placeholder,
+  input::input-placeholder {
+    color: #fff;
+  }
+
 .button {
+  background: none;
   border: 2px solid #fff;
+  color: #fff;
   font-size: 18px;
   padding: 12px 32px 8px;
   text-decoration: none;
+  &:hover {
+    background: rgba(255,255,255,.2)
+  }
+  &:active {
+    background: rgba(0,0,0,.1)
+  }
 }
 
 .hero {
@@ -70,12 +93,17 @@ p {
   background-size: cover;
   color: #fff;
   height: 70vh;
+  position: relative;
 }
 
 .hero-content {
-  margin-top: 10vh;
+  margin-top: 13vh;
   text-align: center;
 }
+
+  .hero-content h1 span {
+    color: #e0f5ee;
+  }
 
   .hero-content p {
     opacity: .6;
@@ -85,6 +113,15 @@ p {
   .hero-content a.button {
     color: #fff;
     display: inline-block;
+  }
+
+  .hero a.arrow {
+    display: block;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
   }
 
 header .container {
@@ -105,13 +142,21 @@ nav {
   nav ul li {
     display: inline;
     font-size: 18px;
+    font-weight: 600;
     margin-left: 35px;
   }
 
     nav ul li a {
       color: #fff;
       text-decoration: none;
+      &.button {
+        padding: 8px 44px;
+      }
     }
+
+.mobile-nav {
+  display: none;
+}
 
 .plan {
   background: url(plan.jpg) no-repeat center center;
@@ -132,10 +177,19 @@ nav {
   width: 780px;
 }
 
+.plan {
+  padding-bottom: 30px;
+}
+
 .founders {
   width: 620px;
   margin: 0 auto;
 }
+
+  .founders .founders-photo {
+    max-width: 620px;
+    width: 100%;
+  }
 
   .founder-profile {
     display: inline-block;
@@ -144,7 +198,7 @@ nav {
 
   .founder-profile h3 {
     font-size: 22px;
-    margin-bottom: 0;
+    margin-bottom: 2px;
   }
 
   .founder-profile h4 {
@@ -199,8 +253,10 @@ nav {
 
 .plan-graphic,
 .progress-graphic {
-  max-width: 940px;
+  display: block;
   margin: 0 auto;
+  max-width: 940px;
+  width: 100%;
 }
 
 .involved div.give-blocks {
@@ -208,10 +264,17 @@ nav {
   font-size: 18px;
   width: 380px;
   vertical-align: top;
+  &:nth-child(odd) {
+    margin-right: 10px;
+  }
+  p {
+    margin-bottom: 35px;
+  }
 }
 
 .involved a.button {
-  border-color: #45C59A;
+  border-color: #45c59a;
+  color: #45c59a;
   padding: 12px 15px 8px;
 }
 
@@ -230,43 +293,186 @@ nav {
   .involved a.button.card span {
     background: url(card.png) no-repeat top left;
     height: 27px;
+    position: relative;
+    top: -2px;
     width: 48px;
+    vertical-align: middle;
   }
 
 footer {
   background: #2b3032;
   color: rgba(255,255,255,.6);
   padding: 75px 0;
-}
 
-  footer img {
+  img {
     float: left;
   }
 
-  footer nav {
+  nav {
     margin: 10px 0;
   }
 
-  footer ul {
+  ul {
     float: right;
-  }
-
-    footer ul li {
+    li {
       font-size: 16px;
+      font-weight: 500;
       margin-left: 25px;
+      a {
+        opacity: .6;
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
+  }
+}
 
 html {
   height: 100%;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  
-  /* Styles for mobile */
+@media only screen and (max-device-width : 1024px) {
+  body {
+    font-size: 18px;
+  }
 
+  .hero-content  {
+    h1 {
+      font-size: 38px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  nav ul li {
+    font-size: 14px;
+    margin-left: 18px;
+    a.button {
+      font-size: 14px;
+      padding: 8px 28px;
+    }
+  }
+
+  .container,
+  .story .container,
+  .plan .container,
+  .progress .container,
+  .involved .container {
+    width: 90%;
+  }
+
+  .founders {
+    max-width: 620px;
+    width: 100%;
+  }
+
+  .founders-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .plan-graphic,
+  .progress-graphic {
+    height: auto;
+    width: 95%;
+  }
+
+  .involved div.give-blocks {
+    width: 336px;
+    font-size: 16px;
+  }
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (max-device-width : 500px) {
+  
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    span {
+      background: #fff;
+      clear: left;
+      display: block;
+      float: left;
+      height: 2px;
+      margin: 2px 5px 2px 0;
+      width: 20px;
+    }
+  }
+
+  .hero-content  {
+    margin-top: 3vh;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+
+    a.button {
+      font-size: 16px;
+    }
+  }
+
+  #plan-video {
+    margin-top: 0;
+  }
+
+  .involved div.give-blocks {
+    font-size: 14px;
+    width: 95%;
+    &:nth-child(odd) {
+      margin-bottom: 25px;
+    }
+    input.button {
+      padding: 9px 22px 8px;
+    }
+  }
+
+  footer {
+    padding: 20px;
+    img {
+      display: none;
+    }
+
+    nav {
+      float: none;
+      ul {
+        float: none;
+        li {
+          display: block;
+          margin-bottom: 20px;
+          text-align: center;
+          a {
+            color: #fff;
+            display: block;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
 
 }
 
