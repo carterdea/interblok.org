@@ -83,7 +83,7 @@ input::input-placeholder {
   background: url(../hero.jpg) no-repeat center center;
   background-size: cover;
   color: #fff;
-  height: 70vh;
+  height: 85vh;
   position: relative; }
 
 .hero-content {
@@ -339,7 +339,7 @@ html {
       width: 20px; }
 
   .hero-content {
-    margin-top: 3vh; }
+    margin-top: 10vh; }
     .hero-content h1 {
       font-size: 24px; }
     .hero-content p {
