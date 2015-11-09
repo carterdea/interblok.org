@@ -1,2 +1,3 @@
 # Ignoring the builds because they're constantly changing and it's annoying
 /Build/
+.DS_STORE

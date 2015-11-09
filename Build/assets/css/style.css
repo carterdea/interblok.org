@@ -206,22 +206,22 @@ nav ul li a {
   display: none; }
 
 .founder-profile ul li.instagram {
-  background: url(../social-instagram.png) no-repeat left top;
+  background: url(../social-instagram.png) no-repeat top left;
   background-size: 24px; }
-
-.instagram-button.button {
-  background: url(../social-instagram-mint.png) no-repeat 20px 10px;
-  background-size: 24px;
-  border-color: #45c59a;
-  color: #45c59a;
-  display: block;
-  margin: 0 auto;
-  padding-left: 60px;
-  width: 230px; }
 
 #plan-video {
   margin: 50px auto 0;
   max-width: 940px; }
+
+.button.instagram-button {
+  background: url(../social-instagram-mint.png) no-repeat 18px 11px;
+  background-size: 24px;
+  border-color: #45c59a;
+  display: block;
+  color: #45c59a;
+  margin: 20px auto 0;
+  padding-left: 60px;
+  width: 128px; }
 
 .plan-graphic,
 .progress-graphic {
@@ -233,10 +233,10 @@ nav ul li a {
 .involved div.give-blocks {
   display: inline-block;
   font-size: 18px;
-  width: 370px;
+  width: 380px;
   vertical-align: top; }
   .involved div.give-blocks:nth-child(odd) {
-    margin-right: 20px; }
+    margin-right: 10px; }
   .involved div.give-blocks p {
     margin-bottom: 35px; }
 
@@ -253,11 +253,12 @@ nav ul li a {
 .involved a.button.paypal span {
   background: url(../paypal.png) no-repeat top left;
   background-size: 72px 19px;
-  height: 20px;
+  height: 19px;
   width: 72px; }
 
 .involved a.button.card span {
-  background: url(card.png) no-repeat top left;
+  background: url(../credit-card.png) no-repeat top left;
+  background-size: 48px 27px;
   height: 27px;
   position: relative;
   top: -2px;
