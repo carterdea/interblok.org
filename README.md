@@ -1,8 +1,8 @@
 # Interblok.org
-The interblok website.
+The interblok website. Woo!
 
 ## Technology
-- Hammer.app tempaltes (http://hammerformac.com/)
+- Hammer.app templates (http://hammerformac.com/)
 - SASS
 
 ## 3rd Party Libraries

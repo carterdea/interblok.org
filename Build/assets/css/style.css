@@ -177,6 +177,7 @@ nav ul li a {
 
 .founder-profile h5.medium-post {
   background: url(../social-medium.png) no-repeat center left;
+  background-size: 18px 14px;
   font-size: 14px;
   font-family: "Reader Medium";
   padding: 3px 0 0 0;
@@ -205,7 +206,18 @@ nav ul li a {
   display: none; }
 
 .founder-profile ul li.instagram {
-  background: url(../social-instagram.png) no-repeat top left; }
+  background: url(../social-instagram.png) no-repeat left top;
+  background-size: 24px; }
+
+.instagram-button.button {
+  background: url(../social-instagram-mint.png) no-repeat 20px 10px;
+  background-size: 24px;
+  border-color: #45c59a;
+  color: #45c59a;
+  display: block;
+  margin: 0 auto;
+  padding-left: 60px;
+  width: 230px; }
 
 #plan-video {
   margin: 50px auto 0;
@@ -221,10 +233,10 @@ nav ul li a {
 .involved div.give-blocks {
   display: inline-block;
   font-size: 18px;
-  width: 380px;
+  width: 370px;
   vertical-align: top; }
   .involved div.give-blocks:nth-child(odd) {
-    margin-right: 10px; }
+    margin-right: 20px; }
   .involved div.give-blocks p {
     margin-bottom: 35px; }
 
@@ -240,11 +252,12 @@ nav ul li a {
 
 .involved a.button.paypal span {
   background: url(../paypal.png) no-repeat top left;
+  background-size: 72px 19px;
   height: 20px;
-  width: 70px; }
+  width: 72px; }
 
 .involved a.button.card span {
-  background: url(../credit-card.png) no-repeat top left;
+  background: url(card.png) no-repeat top left;
   height: 27px;
   position: relative;
   top: -2px;
