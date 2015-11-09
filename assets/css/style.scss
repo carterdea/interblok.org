@@ -266,7 +266,7 @@ nav {
   color: #45c59a;
   margin: 20px auto 0;
   padding-left: 60px;
-  width: 128px;
+  width: 142px;
 }
 
 .plan-graphic,
@@ -293,7 +293,9 @@ nav {
 .involved a.button {
   border-color: #45c59a;
   color: #45c59a;
-  padding: 12px 15px 8px;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 12px 15px 10px;
 }
 
   .involved a.button span {
