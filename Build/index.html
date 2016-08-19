@@ -4,31 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                window.onbeforeunload = function() { ws = null }
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
-  <link rel='stylesheet' href='assets/css/normalize.css'>
-<link rel='stylesheet' href='assets/css/style.css'>
+  <link rel='stylesheet' href='assets/3b1831e306f74a8a8d0d9d981fe4b44e.css'>
 
   <!-- <script type="text/javascript">
     var html = document.getElementsByTagName('html')[0];
@@ -51,7 +27,7 @@
   </script> -->
   <link rel="stylesheet" href="//f.fontdeck.com/s/css/Y5LISEPuN4lJJ61tmeb14UEx/oY/interblok.org/57838.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src='assets/js/app.js'></script>
+  <script src='assets/09ff425f6b46f61e5c6429be9e290878.js'></script>
   <script src="assets/js/jquery.fitvids.js"></script>
   <link href="assets/favicon.ico" rel="shortcut icon">
   <title>interBLOK | Repurposing shipping containers to rebuild orphanages and lives</title>
@@ -64,17 +40,18 @@
         <img src="assets/logo.png" alt="interBLOK" class="logo" width="111" height="60" />
         <nav>
   <ul class="desktop-nav">
-    <li><a href="#story">The Story</a></li>
+    <li><a href="#team">The Team</a></li>
     <li><a href="#plan">The Plan</a></li>
     <li><a href="#progress">Our Progress<a></li>
     <li><a href="#involved" class="button">Donate</a></li>
   </ul>
   <a href="#footer" class="mobile-nav"><span></span><span></span><span></span> Menu</a>
 </nav>
+
       </div>
     </header>
     <section class="hero-content container">
-      <h1>interBLOK is a nonprofit organization that repurposes <span>shipping containers</span> to provide off-grid water and power solutions to those on the front line.</h1>
+      <h1>interBLOK is a nonprofit that repurposes <span>shipping containers</span> to provide off-grid water and power solutions to those on the front line.</h1>
       <!-- <p>interBLOK is a nonprofit that upcycles shipping containers to provide immediate care &amp; long term infrastructure for orphans internationally.</p> -->
       <a href="#plan-video" class="button">Learn More</a>
       <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=M5WDPM2X669PU" class="button paypal">Donate by <span>Paypal</span></a>
@@ -89,13 +66,13 @@
       <h2>Donate to our current project today!</h2>
       <a href="#" class="button rallyup">Donate on <span>RallyUp.com</span></a>
     </div>
-  </section><!--.banner--> -->
+  </section><!--.banner-->
   <section class="plan" id="plan">
     <div id="progress-video">
       <iframe src="https://player.vimeo.com/video/144644435?color=4faf43&title=0&byline=0&portrait=0"  width="940" height="528" frameborder="0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <div class="container">
-      <h2>The Model</h2>
+      <h2>The Plan</h2>
       <p>The shipping container is stronger, safer, and faster to the field than traditional building materials. Taking modern fabrication methods to shipping containers brings us access to steel infrastructure in every port in the world.</p>
       <p>As we work with local grassroot NGOs we bring design and supplies that are influenced by their needs. We source labor and materials locally to stimulate the economy and create jobs. interBLOK is busy down in Mexico working to provide dependable off-grid water and power solutions for our partners. Your donation is ready to be shipped.</p>
     </div>
@@ -109,10 +86,8 @@
       <a href="http://www.instagram.com/interblok" class="button instagram-button">Follow Our Story</a>
     </div><!--container-->
 <!--  </section> -->
-  <section class="story" id="story">
+  <section class="story" id="team">
     <div class="container">
-      <h2>The Story</h2>
-      <p>In May of 2014, family members of Graham and Alex came back from a relief trip to Manila, Philippines.  Alex saw a great need in the way we educate and care for orphans and children internationally. During this same time Graham had been exploring the world of architecture, upcycled building materials, and renewable resources. Enter the Shipping Container.</p>
       <div class="founders group">
         <img src="assets/founders.jpg" alt="The founders, Graham & Alex Miller" class="founders-photo" width="620" height="414">
         <div class="founder-profile">
@@ -161,7 +136,7 @@
     <img src="assets/footer-logo.png" alt="interBLOK" width="100" height="54">
     <nav>
       <ul>
-        <li><a href="#story">The Story</a></li>
+        <li><a href="#team">The Team</a></li>
         <li><a href="#plan">The Plan</a></li>
         <li><a href="#progress">Our Progress<a></li>
         <li><a href="#involved">Get Involved<a></li>

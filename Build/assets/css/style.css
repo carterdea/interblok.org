@@ -104,7 +104,8 @@ input::input-placeholder {
 
 .hero-content a.button {
   color: #fff;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 10px; }
 
 .hero a.arrow {
   display: block;
