@@ -1,5 +1,5 @@
 body {
-  font-family: "Reader Medium";
+  font-family: "Reader Medium", reader-medium;
   font-size: 22px;
   font-weight: normal;
   line-height: 1.4;
@@ -24,14 +24,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Reader Bold";
+  font-family: "Reader Bold", reader-bold;
   font-style: normal;
   font-weight: normal;
 }
 
 h1 {
   font-size: 52px;
-  font-family: "Reader Medium";
+  font-family: "Reader Medium", reader-medium;
   line-height: 1.1;
   margin-bottom: 16px;
 }
@@ -58,6 +58,12 @@ a {
 
 p {
   margin: 0 0 16px;
+}
+
+img.responsive {
+  display: block;
+  height: auto;
+  width: 100%;
 }
 
 input,
@@ -182,6 +188,33 @@ nav {
   width: 780px;
 }
 
+.banner {
+  background: #45c59a;
+  padding: 50px 0;
+}
+
+.banner h2 {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.banner .button {
+  display: block;
+  margin: 0 auto;
+  width: 202px;
+}
+
+.button.rallyup span {
+  background: url(rallyup.png) no-repeat top left;
+  background-size: 109px;
+  display: inline-block;
+  font-size: 0;
+  height: 19px;
+  vertical-align: middle;
+  width: 109px;
+}
+
 .plan {
   padding-bottom: 30px;
 }
@@ -253,10 +286,10 @@ nav {
       background-size: 24px;
     }
 
-#plan-video {
-  margin: 50px auto 0;
-  max-width: 940px;
-}
+// #plan-video {
+//   margin: 50px auto 50px;
+//   max-width: 940px;
+// }
 
 .button.instagram-button { // I know this code is not good, but I had to shoehorn this in at lunch. I will fix it later
   background: url(social-instagram-mint.png) no-repeat 18px 11px;
@@ -290,6 +323,10 @@ nav {
   }
 }
 
+.involved {
+  background: #424a4d;
+}
+
 .involved a.button {
   border-color: #45c59a;
   color: #45c59a;
@@ -298,13 +335,14 @@ nav {
   padding: 12px 15px 10px;
 }
 
-  .involved a.button span {
+  .involved a.button span,
+  a.button.paypal span {
     display: inline-block;
     font-size: 0;
     vertical-align: middle;
   }
 
-  .involved a.button.paypal span {
+  a.button.paypal span {
     background: url(paypal.png) no-repeat top left;
     background-size: 72px 19px;
     height: 19px;
