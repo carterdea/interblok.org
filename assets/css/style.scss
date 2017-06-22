@@ -1,7 +1,7 @@
 body {
-  font-family: "Reader Medium", reader-medium;
+  font-family: "aaux-next", "Reader Medium", reader-medium;
   font-size: 22px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,14 +24,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Reader Bold", reader-bold;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "aaux-next", "Reader Bold", reader-bold;
+  font-style: bold;
+  font-weight: bold;
 }
 
 h1 {
   font-size: 52px;
-  font-family: "Reader Medium", reader-medium;
+  font-family: "aaux-next", "Reader Medium", reader-medium;
   line-height: 1.1;
   margin-bottom: 16px;
 }
@@ -71,8 +71,8 @@ textarea {
   background: rgba(255,255,255,.3);
   border: 0;
   color: #fff;
-  font-family: "Reader Medium";
-  padding: 14px 0px 10px 12px;
+  font-family: "aaux-next", "Reader Medium";
+  padding: 14px 0px 14px 12px;
 }
 
   input::-webkit-input-placeholder,
@@ -86,7 +86,7 @@ textarea {
   border: 2px solid #fff;
   color: #fff;
   font-size: 18px;
-  padding: 12px 32px 8px;
+  padding: 12px 32px;
   text-decoration: none;
   &:hover {
     background: rgba(255,255,255,.2)
@@ -104,13 +104,18 @@ textarea {
   background: url(hero.jpg) no-repeat center center;
   background-size: cover;
   color: #fff;
-  height: 85vh;
+  min-height: 85vh;
   position: relative;
 }
 
 .hero-content {
-  margin-top: 13vh;
+  padding-top: 13vh;
   text-align: center;
+}
+
+.faq .hero {
+  background: #45c59a;
+  min-height: 26vh;
 }
 
   .hero-content h1 span {
@@ -135,6 +140,11 @@ textarea {
     left: 0;
     margin: 0 auto;
     position: absolute;
+  }
+
+  .faq .hero .hero-content.container {
+    padding: 6vh 0;
+    text-align: center;
   }
 
 header .container {
@@ -162,12 +172,16 @@ nav {
       color: #fff;
       text-decoration: none;
       &.button {
-        padding: 8px 44px 6px;
+        padding: 8px 44px;
       }
     }
 
 .mobile-nav {
   display: none;
+}
+
+.faq .content.container {
+  padding: 20px 0;
 }
 
 .plan {
@@ -185,7 +199,7 @@ nav {
 .plan .container,
 .progress .container,
 .involved .container {
-  padding: 30px 0; 
+  padding: 30px 0;
   width: 780px;
 }
 
@@ -203,7 +217,7 @@ nav {
 .banner .button {
   display: block;
   margin: 0 auto;
-  width: 230px;
+  width: 200px;
 }
 
 .button.rallyup span {
@@ -242,7 +256,7 @@ nav {
 
   .founder-profile h4 {
     font-size: 16px;
-    font-family: "Reader Medium";
+    font-family: "aaux-next", "Reader Medium";
     margin-bottom: 5px;
   }
 
@@ -250,7 +264,7 @@ nav {
     background: url(social-medium.png) no-repeat center left;
     background-size: 18px 14px;
     font-size: 14px;
-    font-family: "Reader Medium";
+    font-family: "aaux-next", "Reader Medium";
     padding: 3px 0 0 0;
     margin-bottom: 10px;
   }
@@ -377,7 +391,7 @@ footer {
     float: right;
     li {
       font-size: 16px;
-      font-family: "Reader Medium";
+      font-family: "aaux-next", "Reader Medium";
       margin-left: 25px;
       a {
         opacity: .6;
@@ -448,7 +462,7 @@ html {
 }
 
 @media only screen and (max-device-width : 500px) {
-  
+
   body {
     font-size: 16px;
   }
@@ -540,7 +554,7 @@ html {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
 
   /* Don't forget your Retina CSS! */
-  
+
   body {
     background-size: 72px 72px;
   }

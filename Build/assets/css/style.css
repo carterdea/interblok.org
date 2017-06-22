@@ -1,7 +1,7 @@
 body {
-  font-family: "Reader Medium", reader-medium;
+  font-family: "aaux-next", "Reader Medium", reader-medium;
   font-size: 22px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -22,13 +22,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Reader Bold", reader-bold;
-  font-style: normal;
-  font-weight: normal; }
+  font-family: "aaux-next", "Reader Bold", reader-bold;
+  font-style: bold;
+  font-weight: bold; }
 
 h1 {
   font-size: 52px;
-  font-family: "Reader Medium", reader-medium;
+  font-family: "aaux-next", "Reader Medium", reader-medium;
   line-height: 1.1;
   margin-bottom: 16px; }
 
@@ -61,8 +61,8 @@ textarea {
   background: rgba(255, 255, 255, 0.3);
   border: 0;
   color: #fff;
-  font-family: "Reader Medium";
-  padding: 14px 0px 10px 12px; }
+  font-family: "aaux-next", "Reader Medium";
+  padding: 14px 0px 14px 12px; }
 
 input::-webkit-input-placeholder,
 input::-moz-placeholder,
@@ -74,7 +74,7 @@ input::input-placeholder {
   border: 2px solid #fff;
   color: #fff;
   font-size: 18px;
-  padding: 12px 32px 8px;
+  padding: 12px 32px;
   text-decoration: none; }
   .button:hover {
     background: rgba(255, 255, 255, 0.2); }
@@ -88,12 +88,16 @@ input::input-placeholder {
   background: url(../hero.jpg) no-repeat center center;
   background-size: cover;
   color: #fff;
-  height: 85vh;
+  min-height: 85vh;
   position: relative; }
 
 .hero-content {
-  margin-top: 13vh;
+  padding-top: 13vh;
   text-align: center; }
+
+.faq .hero {
+  background: #45c59a;
+  min-height: 26vh; }
 
 .hero-content h1 span {
   color: #e0f5ee; }
@@ -114,6 +118,10 @@ input::input-placeholder {
   left: 0;
   margin: 0 auto;
   position: absolute; }
+
+.faq .hero .hero-content.container {
+  padding: 6vh 0;
+  text-align: center; }
 
 header .container {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -136,10 +144,13 @@ nav ul li a {
   color: #fff;
   text-decoration: none; }
   nav ul li a.button {
-    padding: 8px 44px 6px; }
+    padding: 8px 44px; }
 
 .mobile-nav {
   display: none; }
+
+.faq .content.container {
+  padding: 20px 0; }
 
 .plan {
   background: url(../plan.jpg) no-repeat center center;
@@ -169,7 +180,7 @@ nav ul li a {
 .banner .button {
   display: block;
   margin: 0 auto;
-  width: 230px; }
+  width: 200px; }
 
 .button.rallyup span {
   background: url(../rallyup.png) no-repeat top left;
@@ -201,14 +212,14 @@ nav ul li a {
 
 .founder-profile h4 {
   font-size: 16px;
-  font-family: "Reader Medium";
+  font-family: "aaux-next", "Reader Medium";
   margin-bottom: 5px; }
 
 .founder-profile h5.medium-post {
   background: url(../social-medium.png) no-repeat center left;
   background-size: 18px 14px;
   font-size: 14px;
-  font-family: "Reader Medium";
+  font-family: "aaux-next", "Reader Medium";
   padding: 3px 0 0 0;
   margin-bottom: 10px; }
 
@@ -308,7 +319,7 @@ footer {
     float: right; }
     footer ul li {
       font-size: 16px;
-      font-family: "Reader Medium";
+      font-family: "aaux-next", "Reader Medium";
       margin-left: 25px; }
       footer ul li a {
         opacity: .6; }
