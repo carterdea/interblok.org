@@ -3,12 +3,14 @@ body {
   font-size: 22px;
   font-weight: 500;
   line-height: 1.4;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 .container {
   width: 940px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .group:after {
   /* this is the new "clearfix" semantic name */
@@ -94,6 +96,16 @@ input::input-placeholder {
 .hero-content {
   padding-top: 13vh;
   text-align: center; }
+
+.causebrew .hero {
+  background: #d5b969;
+  background-image: none;
+}
+
+.causebrew .hero-content p {
+  opacity: 1;
+  margin-bottom: 30px;
+}
 
 .faq .hero {
   background: #45c59a;
